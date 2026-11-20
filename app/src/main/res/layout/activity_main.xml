@@ -1,103 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="#F5F7FB">
+    android:background="#F3F6FA"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
-        android:padding="28dp">
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="44dp"
+        android:paddingBottom="28dp">
+
+        <!-- Academic identity -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S /"
+            android:textColor="#193B65"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:contentDescription="Student portal emblem" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:text="STUDENT PORTAL"
-            android:textColor="#2563EB"
-            android:textSize="14sp"
+            android:textColor="#496B91"
+            android:textSize="12sp"
             android:textStyle="bold"
-            android:gravity="center"
-            android:letterSpacing="0.15" />
+            android:letterSpacing="0.18" />
+
+        <!-- Welcome section -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
             android:text="Welcome back."
-            android:textColor="#172033"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginTop="16dp" />
+            android:textColor="#172D49"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign in to your student account"
-            android:textColor="#64748B"
-            android:textSize="14sp"
-            android:gravity="center"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="36dp" />
+            android:text="Your academic space, all in one place."
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <!-- Login form -->
 
         <TextView
+            android:id="@+id/labelUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
             android:text="Username"
-            android:textColor="#334155"
+            android:textColor="#253D5B"
+            android:textSize="14sp"
             android:textStyle="bold"
-            android:textSize="14sp" />
+            android:labelFor="@id/etUsername" />
 
         <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
             android:hint="Enter your username"
             android:inputType="text"
             android:singleLine="true"
-            android:padding="14dp"
-            android:backgroundTint="#2563EB" />
+            android:textColor="#172D49"
+            android:textColorHint="#8392A5"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:autofillHints="username" />
 
         <TextView
+            android:id="@+id/labelPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:text="Password"
-            android:textColor="#334155"
-            android:textStyle="bold"
+            android:textColor="#253D5B"
             android:textSize="14sp"
-            android:layout_marginTop="22dp" />
+            android:textStyle="bold"
+            android:labelFor="@id/etPassword" />
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
             android:hint="Enter your password"
             android:inputType="textPassword"
             android:singleLine="true"
-            android:padding="14dp"
-            android:backgroundTint="#2563EB" />
+            android:textColor="#172D49"
+            android:textColorHint="#8392A5"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:autofillHints="password" />
+
+        <!-- Primary action -->
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginTop="32dp"
-            android:text="LOGIN"
+            android:layout_marginTop="36dp"
+            android:text="Sign in"
+            android:textAllCaps="false"
             android:textSize="15sp"
+            android:textStyle="bold"
             android:textColor="#FFFFFF"
-            android:backgroundTint="#2563EB" />
+            android:backgroundTint="#193B65" />
+
+        <!-- Footer -->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Student Information System"
-            android:textSize="12sp"
-            android:textColor="#94A3B8"
-            android:gravity="center"
-            android:layout_marginTop="40dp" />
+            android:layout_marginTop="48dp"
+            android:text="STUDENT INFORMATION SYSTEM"
+            android:textColor="#75869B"
+            android:textSize="11sp"
+            android:letterSpacing="0.10"
+            android:gravity="center" />
 
     </LinearLayout>
+
 </ScrollView>
