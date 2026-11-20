@@ -21,10 +21,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="S /"
-            android:textColor="#193B65"
-            android:textSize="34sp"
+            android:text="NU Manila SIS"
+            android:textColor="#183153"
+            android:textSize="30sp"
             android:textStyle="bold"
+            android:letterSpacing="-0.04"
             android:contentDescription="Student portal emblem" />
 
         <TextView
