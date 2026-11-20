@@ -13,224 +13,280 @@
         android:orientation="vertical"
         android:padding="24dp">
 
+        <!-- University identity -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_header"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NU / MANILA"
+                android:textColor="#BFD9F0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="STUDENT INFORMATION SYSTEM"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Page introduction -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="NU Manila SIS"
-            android:textColor="#1E4068"
-            android:textSize="30sp"
+            android:layout_marginTop="32dp"
+            android:text="Academic Record"
+            android:textColor="#172D49"
+            android:textSize="29sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="STUDENT PORTAL"
-            android:textColor="#64748B"
-            android:textSize="11sp"
-            android:letterSpacing="0.15"
-            android:layout_marginTop="4dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Academic Record"
-            android:textColor="#172033"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            android:layout_marginTop="30dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp"
             android:text="A closer look at your student profile."
             android:textColor="#64748B"
-            android:textSize="14sp"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="28dp" />
+            android:textSize="14sp" />
+
+        <!-- Section 01: Personal Details -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="01  /  PERSONAL DETAILS"
-            android:textColor="#1E4068"
+            android:textColor="#193B65"
             android:textStyle="bold"
             android:textSize="12sp"
             android:letterSpacing="0.08"
-            android:layout_marginBottom="18dp" />
+            android:background="@drawable/bg_section"
+            android:padding="14dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Student number -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Student number"
-            android:textColor="#334155"
+            android:textColor="#253D5B"
             android:textStyle="bold"
-            android:textSize="13sp" />
+            android:textSize="14sp"
+            android:labelFor="@id/etStudentNumber" />
 
         <EditText
             android:id="@+id/etStudentNumber"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
             android:hint="Enter student number"
             android:inputType="text"
             android:singleLine="true"
-            android:padding="14dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
             android:textSize="14sp"
-            android:textColor="#172033"
-            android:textColorHint="#94A3B8"
+            android:textColor="#172D49"
+            android:textColorHint="#64748B"
             android:background="@drawable/bg_input" />
+
+        <!-- Last name -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Last name"
-            android:textColor="#334155"
+            android:textColor="#253D5B"
             android:textStyle="bold"
-            android:textSize="13sp"
-            android:layout_marginTop="18dp" />
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:labelFor="@id/etLastName" />
 
         <EditText
             android:id="@+id/etLastName"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
             android:hint="Enter last name"
             android:inputType="textPersonName"
             android:singleLine="true"
-            android:padding="14dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
             android:textSize="14sp"
-            android:textColor="#172033"
-            android:textColorHint="#94A3B8"
+            android:textColor="#172D49"
+            android:textColorHint="#64748B"
             android:background="@drawable/bg_input" />
+
+        <!-- First name -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="First name"
-            android:textColor="#334155"
+            android:textColor="#253D5B"
             android:textStyle="bold"
-            android:textSize="13sp"
-            android:layout_marginTop="18dp" />
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:labelFor="@id/etFirstName" />
 
         <EditText
             android:id="@+id/etFirstName"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
             android:hint="Enter first name"
             android:inputType="textPersonName"
             android:singleLine="true"
-            android:padding="14dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
             android:textSize="14sp"
-            android:textColor="#172033"
-            android:textColorHint="#94A3B8"
+            android:textColor="#172D49"
+            android:textColorHint="#64748B"
             android:background="@drawable/bg_input" />
+
+        <!-- Middle name -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Middle name"
-            android:textColor="#334155"
+            android:textColor="#253D5B"
             android:textStyle="bold"
-            android:textSize="13sp"
-            android:layout_marginTop="18dp" />
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:labelFor="@id/etMiddleName" />
 
         <EditText
             android:id="@+id/etMiddleName"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
             android:hint="Enter middle name"
             android:inputType="textPersonName"
             android:singleLine="true"
-            android:padding="14dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
             android:textSize="14sp"
-            android:textColor="#172033"
-            android:textColorHint="#94A3B8"
+            android:textColor="#172D49"
+            android:textColorHint="#64748B"
             android:background="@drawable/bg_input" />
+
+        <!-- Section divider -->
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#E2E8F0"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="28dp" />
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Section 02: Academic Details -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="02  /  ACADEMIC DETAILS"
-            android:textColor="#1E4068"
+            android:textColor="#193B65"
             android:textStyle="bold"
             android:textSize="12sp"
             android:letterSpacing="0.08"
-            android:layout_marginBottom="18dp" />
+            android:background="@drawable/bg_section"
+            android:padding="14dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Program -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Program"
-            android:textColor="#334155"
+            android:textColor="#253D5B"
             android:textStyle="bold"
-            android:textSize="13sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
             android:text="BS Computer Science"
-            android:textColor="#172033"
+            android:textColor="#172D49"
             android:textSize="14sp"
             android:gravity="center_vertical"
-            android:padding="14dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
             android:background="@drawable/bg_input" />
+
+        <!-- Specialization -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Specialization"
-            android:textColor="#334155"
+            android:textColor="#253D5B"
             android:textStyle="bold"
-            android:textSize="13sp"
-            android:layout_marginTop="18dp" />
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:labelFor="@id/spSpecialization" />
 
         <Spinner
             android:id="@+id/spSpecialization"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="8dp"
-            android:padding="10dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
             android:entries="@array/specializations"
-            android:background="@drawable/bg_input" />
+            android:background="@drawable/bg_input"
+            android:spinnerMode="dropdown" />
+
+        <!-- Year level -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Year level"
-            android:textColor="#334155"
+            android:textColor="#253D5B"
             android:textStyle="bold"
-            android:textSize="13sp"
-            android:layout_marginTop="18dp" />
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:labelFor="@id/spYearLevel" />
 
         <Spinner
             android:id="@+id/spYearLevel"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginTop="8dp"
-            android:padding="10dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
             android:entries="@array/year_levels"
-            android:background="@drawable/bg_input" />
+            android:background="@drawable/bg_input"
+            android:spinnerMode="dropdown" />
+
+        <!-- Footer -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="STUDENT INFORMATION SYSTEM"
-            android:textColor="#94A3B8"
-            android:textSize="10sp"
-            android:gravity="center"
-            android:letterSpacing="0.1"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="20dp"
+            android:text="NU MANILA  /  STUDENT PORTAL"
+            android:textColor="#75869B"
+            android:textSize="11sp"
+            android:letterSpacing="0.10"
+            android:gravity="center" />
 
     </LinearLayout>
+
 </ScrollView>
