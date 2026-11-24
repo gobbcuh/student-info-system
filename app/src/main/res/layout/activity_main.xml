@@ -1,158 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ViewFlipper
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+    android:id="@+id/viewFlipper"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F7FB"
-    android:fillViewport="true">
+    android:inAnimation="@android:anim/fade_in"
+    android:outAnimation="@android:anim/fade_out">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
+    <!-- Screen 0: Login Screen -->
+    <include
+        android:id="@+id/screenLogin"
+        layout="@layout/layout_login" />
 
-        <!-- University identity -->
+    <!-- Screen 1: Student Info Academic Record Screen -->
+    <include
+        android:id="@+id/screenStudentInfo"
+        layout="@layout/layout_student_info" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/bg_header"
-            android:padding="26dp">
+    <!-- Screen 2: Sign Up Screen -->
+    <include
+        android:id="@+id/screenSignup"
+        layout="@layout/layout_signup" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="NU / MANILA"
-                android:textColor="#BFD9F0"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:letterSpacing="0.18" />
+    <!-- Screen 3: Forgot Password Screen -->
+    <include
+        android:id="@+id/screenForgot"
+        layout="@layout/layout_forgot" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:text="Your campus,\nyour records."
-                android:textColor="#FFFFFF"
-                android:textSize="29sp"
-                android:textStyle="bold"
-                android:lineSpacingExtra="5dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:text="STUDENT INFORMATION SYSTEM"
-                android:textColor="#DCEAF7"
-                android:textSize="10sp"
-                android:letterSpacing="0.12" />
-
-        </LinearLayout>
-
-        <!-- Introduction -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Welcome back."
-            android:textColor="#172D49"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Sign in to your student account."
-            android:textColor="#64748B"
-            android:textSize="14sp" />
-
-        <!-- Username -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Username"
-            android:textColor="#253D5B"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:labelFor="@id/etUsername" />
-
-        <EditText
-            android:id="@+id/etUsername"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/bg_input"
-            android:hint="Enter your username"
-            android:inputType="text"
-            android:singleLine="true"
-            android:paddingStart="18dp"
-            android:paddingEnd="18dp"
-            android:textColor="#172D49"
-            android:textColorHint="#64748B"
-            android:textSize="14sp"
-            android:autofillHints="username" />
-
-        <!-- Password -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Password"
-            android:textColor="#253D5B"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:labelFor="@id/etPassword" />
-
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/bg_input"
-            android:hint="Enter your password"
-            android:inputType="textPassword"
-            android:singleLine="true"
-            android:paddingStart="18dp"
-            android:paddingEnd="18dp"
-            android:textColor="#172D49"
-            android:textColorHint="#64748B"
-            android:textSize="14sp"
-            android:autofillHints="password" />
-
-        <!-- Sign in -->
-
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_marginTop="34dp"
-            android:text="Sign in"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:backgroundTint="#193B65" />
-
-        <!-- Footer -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="46dp"
-            android:layout_marginBottom="20dp"
-            android:text="NU MANILA  /  STUDENT PORTAL"
-            android:textColor="#75869B"
-            android:textSize="11sp"
-            android:letterSpacing="0.10"
-            android:gravity="center" />
-
-    </LinearLayout>
-</ScrollView>
+</ViewFlipper>
