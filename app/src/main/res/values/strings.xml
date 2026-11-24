@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Student Info System</string>
-    <string name="university_name">NU / MANILA</string>
+    <string name="university_name">NU MANILA</string>
     <string name="portal_subtitle">STUDENT INFORMATION SYSTEM</string>
-    <string name="program_cs">BS Computer Science</string>
+    <string name="program_cs">BS Computer Science (CS)</string>
     <string name="login_desc">Sign in to manage your student profile and courses.</string>
     <string name="label_student_id_or_email">Student ID or Email</string>
     <string name="signup_desc">Create your credentials to access campus services.</string>
